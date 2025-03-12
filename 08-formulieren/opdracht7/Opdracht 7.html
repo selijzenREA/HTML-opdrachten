@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactformulier</title>
+</head>
+<h1>Contactformulier</h1>
+
+<form action="mailto:selijzen@reacollege.org?subject=Contactformulier" method="post" enctype="text/plain">
+
+    <label for="naam">uw naam:</label><br>
+    <input type="text" name="surename" id="surname" placeholder="Naam" required><br>
+
+    <label for="straat">Vul uw straatnaam in:</label><br>
+    <input type="text" name="streetname" id="streetname" placeholder="Straatnaam" required><br>
+
+    <label for="postcode">Vul uw postcode in:</label><br>
+    <input type="postcode" name="postcode" id="postcode" placeholder="Postcode"  pattern="[0-9]{4}\s{0,1}[A-Z]{2}" required><br>
+
+    <label for="plaatsnaam">Vul uw plaatsnaam in:</label><br>
+    <input type="text" name="city" id="city" placeholder="Plaatsnaam" required><br>
+
+    <label for="email">Vul uw email in:</label><br>
+    <input type="email" name="email" id="email" required><br>
+
+    <label for="telefoonummer">Vul uw telefoonummer in:</label><br>
+    <input type="tel" name="telephone" id="telephone" required><br>
+
+
+    <label for="message">Vul uw gewenste bericht voor ons in:</label><br>
+    <textarea name="textarea" id="textarea">
+
+    </textarea><br>
+    
+    <input type="submit" name="submit" value="Verzend uw bericht"><br>
+
+    <p>Of klik hieronder voor een automatisch bericht!</p>
+
+    <a href="mailto:selijzen@fddfdf.org?subject=contactformulier&body=Beste%20Stijn,%0AGraag%20neem%20ik%20contact%20met%20je%20op.%20Hierbij%20stuur%20ik%20je%20een%20automatisch%20bericht">Klik hier voor een automatisch bericht</a>
+</form>
+
+</html>
