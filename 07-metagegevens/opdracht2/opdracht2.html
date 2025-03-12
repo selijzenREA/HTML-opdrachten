@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Registratieformulier</title>
+</head>
+<body>
+    <form method="post" action="">
+        <label for="gebruikersnaam">Kies je gebruikersnaam:</label><br>
+        <input type="text" id="username" name="username" placeholder="Gebruikersnaam" required><br>
+
+        <label for="geboortedatum">Selecteer je geboortedatum:</label><br>
+        <input type="date" id="datum" name="birthday" required><br>
+
+        <label for="postcode">Vul je postcode in:</label><br>
+        <input type="text" id="postcode" name="postcode" placeholder="Postcode" pattern="[0-9]{4}\s{0,1}[A-Z]{2}" title="De postcode dient te bestaan uit vier cijfers, een optionele spatie en twee hoofdletters." required><br>
+        
+        <label for="wachtwoord">Geef je wachtwoord op:</label><Br>
+        <input type="password" id="password" name="password" placeholder="Wachtwoord" required><br>
+        
+        <label for="BSN">Geef je BSN-nummer op:</label><br>
+        
+        <input type="text" id="number" name="number" pattern="^\d{9}$" placeholder="BSN-nummer" required><br>
+        
+        <label for="colour">Kies je favoriete kleur:</label><br>
+        <input type="radio" name="colour" id="colour_1" value="rood">Rood<br>
+        <input type="radio" name="colour" id="colour_2" value="blauw">Blauw<br>
+        <input type="radio" name="colour" id="colour_3" value="groen">Groen<br>
+
+        <label for="kinderen">Heb je kinderen?</label><br>
+        <input type="radio" name="children" id="kinderen_ja" value="ja"> Ja<br>
+        <input type="radio" name="children" id="kinderen_nee" value="nee"> Nee<br>
+
+        <label for="status">Wat is je burgerlijke stand?</label><br>
+        <input type="radio" name="status" id="status_1" value="ongehuwd">ongehuwd<br>
+        <input type="radio" name="status" id="status_2" value="gehuwd">Gehuwd<br>
+        <input type="radio" name="status" id="status_3" value="gescheiden">Gescheiden<br>
+        <label for="nationaliteit">Wat is je nationaliteit?</label><br>
+        <select id="nationality" name="nationality" required>
+        <option value="nederlands">Nederlandse</option>
+        <option value="marokkaans">Marokkaanse</option>
+        <option value="turks">Turkse</option>
+        <option value="surinaams">Surinaamse</option>
+        <option value="antilliaans">Antilliaanse</option>
+        <option value="overig">Overige</option>
+        </select><br>
+
+        <label for="woonplaats">Kies je woonplaats</label><br>
+        <input type="text" name="city" id="city" list="cityNames"><br>
+        <datalist id="cityNames"></option>
+	    <option value="Arnhem"></option>
+	    <option value="Utrecht"></option>
+	    <option value="Amsterdam"></option>
+	    <option value="Rotterdam"></option>
+	    <option value="Maastricht"></option>
+	    <option value="Dieren"></option>
+        <option value="Eerbeek"></option>
+</datalist>
+
+        <input type="submit" name="submit">
+</form>
+</body>
+</html>
