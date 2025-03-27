@@ -2,6 +2,7 @@
 <html lang="nl">
 	<head>
 		<meta charset="UTF-8">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		<title>Samenvatting HTML</title>
 		<link rel="stylesheet" href="css/stylesheet.css">
 	</head>
@@ -65,42 +66,42 @@
 				</tr>
 				<tr>
 					<td>&lt;meta&gt;</td>
-					<td>Hier plaats je metagegevens plaatsen (vooral voor SEO)</td>
+					<td>Hier plaats je metagegevens (vooral voor SEO).</td>
 					<td>n.v.t.</td>
 				</tr>				
 				<tr>
 					<td>&lt;h1&gt; t/m &lt;h6&gt;</td>
-					<td>Met deze elementen kun je headings (kopjes) maken</td>
+					<td>Met deze elementen kun je headings (kopjes) maken.</td>
 					<td><h3>Dit is een h3-heading</h3></td>
 				</tr>
             <tr>
                 <td>&lt;del&gt;</td>
-                <td>Met het &lt;del&gt; element kan je aangeven dat tekst is verwijderd</td>
+                <td>Met het &lt;del&gt; element kan je aangeven dat tekst is verwijderd.</td>
                 <td>Hoi, dit is <del>verwijderde</del> tekst</td>
             </tr>
             <tr>
                 <td>&lt;ins&gt;</td>
-                <td>Met het &lt;ins&gt; element kun je aangeven dat tekst is toegevoegd</td>
+                <td>Met het &lt;ins&gt; element kun je aangeven dat tekst is toegevoegd.</td>
                 <td>Dit is een <ins>toegevoegde</ins> tekst.</td>
             </tr>
             <tr>
                 <td>&lt;sup&gt;</td>
-                <td>Met het &lt;sup&gt; element kun je tekst omhoog plaatsen</td>
+                <td>Met het &lt;sup&gt; element kun je tekst omhoog plaatsen.</td>
                 <td>CO<sup>2</sup></td>
             </tr>
             <tr>
                 <td>&lt;sub&gt;</td>
-                <td>Met &lt;sub&gt; kun je bepaalde tekst omlaag plaatsen</td>
+                <td>Met &lt;sub&gt; kun je bepaalde tekst omlaag plaatsen.</td>
                 <td>H<sub>2</sub>O</td>
             </tr>
             <tr>
                 <td>&lt;q&gt;</td>
-                <td>met het &lt;q&gt; element geef je een inline citaat aan</td>
+                <td>met het &lt;q&gt; element geef je een inline citaat aan.</td>
                 <td><q>Dit is een korte quote.</q></td>
             </tr>
             <tr>
                 <td>&lt;blockquote&gt;</td>
-                <td>Met het &lt;blockquote&gt; element geef je een langere quote aan</td>
+                <td>Met het &lt;blockquote&gt; element geef je een langere quote aan.</td>
                 <td>
                     <blockquote cite="https://nl.wikipedia.org/">
                         Dit is een quote van een bron.
@@ -109,10 +110,209 @@
             </tr>
             <tr>
                 <td>&lt;abbr&gt;</td>
-                <td>Met het &lt;abbr&gt; element geef je een afkorting met uitleg weer</td>
+                <td>Met het &lt;abbr&gt; element geef je een afkorting met uitleg weer.</td>
                 <td><abbr title="Larry Page en Sergey Brin">De oprichters van Google</abbr></td>
             </tr>
-        </tbody>
+			<tr>
+				<td>&lt;ul&gt; & &lt;li&gt;</td>
+				<td>Met het &lt;ul&gt; element kan je een unordered list maken hier moet ook altijd een &lt;li&gt; element in zitten.</td>
+				<td><ul>
+					<li>Arnhem</li>
+					<li>Rotterdam</li>
+				</ul></td>
+			</tr>
+			<tr>
+			<td>&lt;a&gt;</td>
+			<td>met het &lt;a&gt; element kan je een website link op een pagina zetten.</td>
+			<td><a href="https://www.google.com">Door hier op te klikken ga je naar Google</a></td>
+			</tr>
+			
+				<tr>
+				<td>&lt;base&gt;</td>
+				<td>Met het &lt;base&gt; element kan je aangeven in welke map de index.html moet zijn.</td>
+				<td>&lt;base href="../"&gt;</td>
+				</tr>
+
+				<tr>
+					<td>&lt;input type="text"&gt;</td>
+					<td>Met dit element kan je schrijven in een input veld met het type text.</td>
+					<td><input type="text"></td>
+				</tr>
+
+				<tr>
+					<td>&lt;input type="email"&gt;</td>
+					<td>Met dit element kan je de gebruiker een email laten schrijven. Hier is altijd een @ verplicht in dit element.</td>
+					<td><input type="email"></td>
+				</tr>
+			
+				<tr>
+					<td>&lt;input type="number"&gt;</td>
+					<td>Met dit element kan je een nummer intypen. het moeten altijd nummers zijn.</td>
+					<td><input type="number"></td>
+				</tr>
+
+				<tr>
+					<td>&lt;input type="date"&gt;</td>
+					<td>Met dit element kan je een datum aanklikken of invullen. Het moet altijd een datum zijn.</td>
+					<td><input type="date"></td>
+				</tr>
+
+				<tr>
+					<td>&lt;input type="radio"&gt;</td>
+					<td>Met dit element krijg je een bolletje. Hiermee kan je dit selecteren. Je kan ze niet meer ongedaan maken.</td>
+					<td><input type="radio" name="kleur" value="blauw">Blauw<br>
+						<input type="radio" name="kleur" value="rood">Rood<br>
+						<input type="radio" name="kleur" value="groen">Groen</td>
+				</tr>
+
+				<tr>
+					<td>&lt;input type="password"&gt;</td>
+					<td>Met dit element kan je de gebruiker een wachtwoord laten intypen.</td>
+					<td><input type="password"></td>
+				</tr>
+
+				<tr>
+					<td>&lt;input type="color"&gt;</td>
+					<td>Met dit element kan je een gebruiker een kleur laten kiezen.</td>
+					<td><input type="color"></td>
+				</tr>
+
+				<tr>
+					<td>&lt;input type="checkbox"&gt;</td>
+					<td>Met dit element kan je een gebruiker een checkbox laten aanvinken. Deze kan gedeselecteerd worden vergeleken met radio.</td>
+					<td><input type="checkbox"></td>
+				</tr>
+				
+
+				<tr>
+					<td>&lt;img&gt;</td>
+					<td>Met dit element kan je een afbeelding laten zien.</td>
+					<td><img src="img/tomaat.jpeg" height="225" width="225"></td>
+				</tr>
+
+				<tr>
+					<td>&lt;caption&gt;</td>
+					<td>Met dit element kan je een tekst boven een table plaatsen. ( zie bovenaan de pagina).</td>
+					<td><caption>Voorbeeld</caption></td>
+				</tr>
+
+				<tr>
+					<td>&lt;video&gt;</td>
+					<td>Met dit element kan je een video implementeren in de webpagina.</td>
+					<td><video controls autoplay loop muted width="225" height="225">
+						<source src="video/short-movie.mp4" type="video/mp4">
+						Uw browser kan dit filmpje niet afspelen.
+					</video></td>
+				</tr>
+
+				<tr>
+					<td>&lt;object&gt;</td>
+					<td>Met dit element kan je een PDF bestand laten zien.</td>
+					<td><object type="application/pdf" data="file/empty_pdf.pdf" width="400" height="300"></object></td>
+				</tr>
+
+				<tr>
+					<td>&lt;source &gt;</td>
+					<td>Met dit element kan je een audio bestand laten zien.</td>
+					<td><audio controls>
+						<source src="audio/no-sound.mp3" type="audio/mpeg">
+						Uw browser ondersteunt geen audio.
+					 </audio>
+					 </td>
+				</tr>
+				
+				<tr>
+					<td>&lt;textarea&gt;</td>
+					<td>Met dit element kan een gebruiker een groter bericht versturen inplaats van met een input type text.</td>
+					<td><textarea name="textarea" placeholder="typ je bericht"></textarea></td>
+				</tr>
+
+				<tr>
+					<td>&lt;hr&gt;</td>
+					<td>Met dit element kan een gebruiker een underline maken.</td>
+					<td><hr></td>
+				</tr>
+
+				<tr>
+					<td>&lt;link rel="icon" href="img/favicon.ico" type="image/x-icon"&gt;</td>
+					<td>Met het bovenstaande element geef je een kleine afbeelding in het tablad weer.</td>
+					<td>Zie tablad icon.</td>
+				</tr>
+
+				<tr>
+					<td>&lt;article&gt;</td>
+					<td>Met het &lt;article&gt; element geef je een zelfstandig artikel aan.</td>
+					<td>
+						<article>
+							<h2>Kop van een artikel</h2>
+							<p>Dit is een voorbeeldartikel.</p>
+						</article>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>&lt;figure&gt;</td>
+					<td>Met dit element kan je een afbeelding of een ander media-element groeperen met een tekst erbij.</td>
+					<td>
+						<figure>
+							<img src="img/tomaat.jpeg" height="225" width="225">
+							<figcaption>Dit is een tomaat.</figcaption>
+						</figure>
+					</td>
+				</tr>
+
+				<tr>
+					<td>&lt;details&gt;</td>
+					<td>Met dit element kan je een samenvouwbaar tekstblok maken dat de gebruiker kan uitklappen.</td>
+					<td>
+						<details>
+							<summary>Google</summary>
+							<p>Google is een search engine!</p>
+						</details>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>&lt;span&gt;</td>
+					<td>Met dit element kan je een stukje tekst selecteren om er apart stijlen aan toe te voegen.</td>
+					<td>Dit is een <span style="color: blue;">blauw</span> woord.</td>
+				</tr>
+				
+				<tr>
+					<td>&lt;select&gt;</td>
+					<td>Met dit element kan je een dropdown maken waarin een gebruiker een keuze kan maken.</td>
+					<td>
+						<label for="afkomst">Wat is je afkomst?</label>
+							<select name="afkomst" id="afkomst">
+    						<option value="nederlands" selected>Nederlands</option>
+    						<option value="belg">Belg</option>
+    						<option value="duits">Duits</option>
+    						<option value="frans">Frans</option>
+						</select>
+
+					</td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td>&lt;label&gt;</td>
+					<td>Met het label element kun je informatie laten zien over het element.</td>
+					<td>Zie hierboven.</td>
+				</tr>
+				
+				<tr>
+					<td>&lt;section&gt;</td>
+					<td>Met het &lt;section&gt; element kun je een sectie aangeven. Dit helpt structuur geven aan content.</td>
+					<td>
+						<section>
+							<h2>Nieuws</h2>
+							<p>Dit is een sectie over het laatste nieuws.</p>
+						</section>
+					</td>
+				</tr>
+
+		</tbody>
     </table>
 </body>
 </html>
